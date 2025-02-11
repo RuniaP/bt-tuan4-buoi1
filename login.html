@@ -1,151 +1,44 @@
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thẻ Giới Thiệu Bản Thân</title>
-  <style>
-    body {
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: linear-gradient(to right, #4facfe, #00f2fe);
-      font-family: Arial, sans-serif;
-    }
-
-    #card-container {
-      height: 380px;
-      width: 650px;
-      border-radius: 16px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: white;
-      box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
-      overflow: hidden;
-      transition: transform 0.5s ease, box-shadow 0.5s ease;
-    }
-
-    #card-container:hover {
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 25px;
-      transform: scale(1.05);
-    }
-
-    #left-side-card {
-      width: 40%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #f8f9fa;
-    }
-
-    #avatar-holder {
-      width: 90%;
-      height: 80%;
-      border-radius: 12px;
-      overflow: hidden;
-      background-color: #eee;
-    }
-
-    #avatar {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    #right-side-card {
-      width: 60%;
-      height: 100%;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    #right-side-card p {
-      font-size: 18px;
-      color: #333;
-      margin: 5px 0;
-    }
-
-    .highlight {
-      font-weight: bold;
-      color: #007bff;
-    }
-
-    .social-links {
-      margin-top: 15px;
-      display: flex;
-      gap: 15px;
-    }
-
-    .social-button {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 15px;
-      border-radius: 8px;
-      font-size: 16px;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-      transition: transform 0.3s ease, opacity 0.3s ease;
-    }
-
-    .social-button img {
-      width: 24px;
-      height: 24px;
-    }
-
-    .social-button:hover {
-      transform: scale(1.1);
-      opacity: 0.8;
-    }
-
-    .google {
-      background: #db4437;
-    }
-
-    .facebook {
-      background: #1877f2;
-    }
-
-    .linkedin {
-      background: #0077b5;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login-style.css">
+    <title>Trang Đăng Nhập</title>
 </head>
 <body>
-  <div id="card-container">
-    <div id="left-side-card">
-      <div id="avatar-holder">
-        <img id="avatar" src="z6237440930913_c18ebe31b6a030e754353a238005b354.jpg" alt="Ảnh đại diện">
-      </div>
-    </div>
-    <div id="right-side-card">
-      <p><span class="highlight">Student ID:</span> 22108154</p>
-      <p><span class="highlight">Họ và tên:</span> Huỳnh Minh Quang</p>
-      <p><span class="highlight">Ngày sinh:</span> 30/08/2002</p>
-      <p><span class="highlight">Địa chỉ:</span> TP.HCM</p>
-      <p><span class="highlight">Email:</span> quanghuynh@example.com</p>
-      <p><span class="highlight">Số điện thoại:</span> 0123 456 789</p>
-      <p><span class="highlight">Nghề nghiệp:</span> Lập trình viên Web</p>
+    <div class="login-container">
+        <div class="login-header">
+            <h1>Đăng Nhập</h1>
+        </div>
+        <div class="form-group">
+            <p class="input-label">Email hoặc số điện thoại</p>
+            <p class="input-box" contenteditable="true" placeholder="Nhập email hoặc số điện thoại"></p>
+        </div>
+        <div class="form-group">
+            <p class="input-label">Mật khẩu</p>
+            <p class="input-box" contenteditable="true" placeholder="Nhập mật khẩu"></p>
+        </div>
+        <div class="login-button">Đăng Nhập</div>
 
-      <div class="social-links">
-        <div class="social-button google">
-          <img src="https://cdn4.iconfinder.com/data/icons/logos-brands-7/512/google_logo-google_icongoogle-512.png" alt="Google">
+        <div class="social-login">
+            <div class="social-button google">
+                <img src="https://cdn4.iconfinder.com/data/icons/logos-brands-7/512/google_logo-google_icongoogle-512.png" alt="Google">
+                Đăng nhập với Google
+            </div>
+            <div class="social-button facebook">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook">
+                Đăng nhập với Facebook
+            </div>
         </div>
-        <div class="social-button facebook">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook">
+
+        <div class="additional-links">
+            <p>Quên mật khẩu?</p>
+            <div class="divider"></div>
+            <p class="create-account">Tạo tài khoản mới</p>
         </div>
-        <div class="social-button linkedin">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
-        </div>
-      </div>
     </div>
-  </div>
 </body>
 </html>
+
