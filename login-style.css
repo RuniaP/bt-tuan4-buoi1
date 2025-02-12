@@ -63,7 +63,7 @@ body {
     cursor: pointer;
     background: #1877f2;
     color: white;
-    transition: background 0.3s;
+    transition:0.3s;
     text-align: center;
 }
 
@@ -140,14 +140,13 @@ body {
     font-weight: bold;
     text-align: center;
     cursor: pointer;
-    transition: background 0.3s;
+    transition:0.3s;
 }
 
 .create-account:hover {
     background: #218838;
 }
 
-/* Editable input */
 .input-box[contenteditable="true"]:empty::before {
     content: attr(placeholder);
     color: gray;
